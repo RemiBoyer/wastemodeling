@@ -43,6 +43,8 @@ Do you want to :
 * You will simulate the waste collection process, in a simplified manner
 * Given the simulation, you will compute performance indicator to describe the outcome (as a "loosy forecast")
 
+You can read more about the waste collection modeling [on the collect page](./collect.md)
+
 ### The waste treatment modeling
 * The purpose is to estimate the feasability and the cost of a **treatment** setup (given in parameter) 
 * You will define your treatment setup through :
