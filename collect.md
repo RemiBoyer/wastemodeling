@@ -5,7 +5,7 @@ Here, you will find a conceptual model of :
 * collect schema
 * collect process
 
-[Territory](./territory.md) and [Production](./production/md) are defined elsewhere.
+[Territory](./territory.md) and [Production](./production.md) are defined elsewhere.
 
 ### collect schema
 * Collect abstract schemas are defined as a datamodel with UML Classes
