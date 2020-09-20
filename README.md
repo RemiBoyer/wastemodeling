@@ -14,7 +14,7 @@ When you have to organize the waste collection and the waste treatment of a terr
 This work is derived from my first big job as civil servant and from an another worl in a now defunct SaaS startup.
 As my work was along the way massively funded by public money, I feel today the need of giving back (on my free time, so I don't know if this repository will be useful someday).
 
-## Needs
+## Prerequisite
 ### You must gather and make computable an accurate knowledge of your territory
 * Relevant data > fresh data > big data 
 * Don't forget trends to tackle the freshness problem
@@ -27,6 +27,13 @@ How do you know ?
 Do you want to :
 * have a workforce ?
 * collect each adress on a door to door route or do you want to ask inhabitants to brig their garbage in dedicated places ?
+
+## Goals
+### Find the best solutions
+* Modeling will help but its just a small part of the job
+
+### Explain why it is the best path
+* KPI, mind maps and data telling
 
 ## Solution
 ### The waste production modeling
