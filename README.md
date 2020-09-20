@@ -33,7 +33,7 @@ Do you want to :
 * The purpose is to estimate the weight and the volume of the waste
 * for each material: Annual Production = ( (Number of Person x annual material reject per person) + the famous organization estimator + the famous "popping waste" estimator
 * At the glance, linear models with magical ratio extracted from data describing the current state
-* Complicated and complex refinement
+* Complicated and complex refinement will be fin
 
 ### The waste collection modeling
 * The purpose is to estimate the feasability and the cost of a **collect** setup (given in parameter) 
@@ -42,6 +42,7 @@ Do you want to :
   * geospatial and time definition : area, various zone, collect point, picking point, work duration, weekly planning, ...)
 * You will simulate the waste collection process, in a simplified manner
 * Given the simulation, you will compute performance indicator to describe the outcome (as a "loosy forecast")
+* Given the knowledge provided by your modeling, you will find bottleneck and you will make new model, optimizers, to find the best scenario
 
 You can read more about the waste collection modeling [on the collect page](./collect.md)
 
@@ -52,3 +53,4 @@ You can read more about the waste collection modeling [on the collect page](./co
   * geospatial and time definition : area, various zone, treatment point, destination for second life of materials) ...
 * You will simulate the waste treatment process, in a simplified manner
 * Given the simulation, you will compute performance indicator to describe the outcome (as a "loosy forecast")
+* Given the knowledge provided by your modeling, you will find bottleneck and you will make new model, optimizers, to find the best scenario
