@@ -20,8 +20,12 @@ As my work was along the way massively funded by public money, I feel today the 
 * Don't forget trends to tackle the freshness problem
 * Accuracy is a sin I had (and I think I still have it)
 
+You can read more about the territory modeling for waste management [on the Territory page](./territory.md)
+
 ### You must measure today waste
 How do you know ?
+
+You can read more about the waste dataset required [on the waste data page](./waste_data.md)
 
 ### You must have some hypothesis for your future master plans
 Do you want to :
@@ -42,7 +46,7 @@ Do you want to :
 * At the glance, linear models with magical ratio extracted from data describing the current state
 * Complicated and complex refinement will be fun
 
-You can read more about the waste collection modeling [on the production page](./production.md)
+You can read more about the waste production modeling [on the production page](./production.md)
 
 ### The waste collection modeling
 * The purpose is to estimate the feasability and the cost of a **collect** setup (given in parameter) 
@@ -64,5 +68,5 @@ You can read more about the waste collection modeling [on the collect page](./co
 * Given the simulation, you will compute performance indicator to describe the outcome (as a "loosy forecast")
 * Given the knowledge provided by your modeling, you will find bottleneck and you will make new model, optimizers, to find the best scenario
 
-You can read more about the waste collection modeling [on the treatment page](./treatment.md)
+You can read more about the waste treatment modeling [on the treatment page](./treatment.md)
 
