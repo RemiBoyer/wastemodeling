@@ -1,15 +1,29 @@
 # Collect modeling
-## About truck capacity, maps, route planning 
 
-## Summaru
-
+## Summary, stories about truck capacity, maps, route planning 
+Here, you will fin
 
 ## In practice : many models
-### Sizing macro Approch
+### Sizing macro (macro approach)
+Based on the territory and on the "collect schema" scenario, "Sizing macro" :
+* Create a spatial segmentation of the territory seen as a collection of points (adresses with waste production)
+* Compute the sizing with the macro algorithm refined by adresses properties
+* Compute performance indicators
 
+### Sizing with adresses (micro approach, points on map)
+Based on the results of "Sizing macro", "Sizing with points" :
+* Create a spatial segmentation of the territory seen as a collection of points (adresses with waste production)
+* Compute the sizing with the macro algorithm refined by adresses properties
+* Compute performance indicators
 
+### Sizing with routes (micro approach, edges on map, first estimator of travel time computed from maps and real trafic data)
+Based on the results of "Sizing with adresses", "Sizing with routes" :
+* Create a spatial segmentation of the territory seen as a collection of segments (streets)
+* Compute the sizing
+* Compute performance indicators
 
-### Sizing micro Approch
-
-
-### Route planning
+### Route planning optimisation
+Based on the results of "Sizing with routes", "Route planning" :
+* create itinerary and route planning for each "Sizing result"
+* Recombine and iterate overs results to improve the global equilibrium
+* Compute performance indicators
