@@ -1,7 +1,17 @@
 # Collect modeling
 
 ## Summary, stories about truck capacity, maps, route planning 
-Here, you will fin
+Here, you will find a conceptual model of :
+* collect schema
+* collect process
+[Territory](./territory.md) and [Production](./production/md) are defined elsewhere.
+
+### collect schema
+* Collect abstract schemas are defined as a datamodel with UML Classes
+* Collect schemas templates and examples are defined as preconfigured datamodel, classes, objects and enum.
+
+### collect process
+* Computation is defined with UML Activity or Sequence.
 
 ## In practice : many models
 ### Sizing macro (macro approach)
