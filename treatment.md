@@ -4,11 +4,16 @@
 * Transport
 * Second hand
 
-### Modeling a generic basic factory
+## Waste network, Modeling a complicated system
+* The big network of materials
+* Many actors, many missing dataset
+* Some flux leave the system, some flux come from nowhere
+
+## Modeling a generic basic factory
 * Input output
 * Area and clients
 
-### Each process needs its model
+## Each factory, each process is unique and needs its model
 * Modeling x
 * Modeling y
 * Modeling z
