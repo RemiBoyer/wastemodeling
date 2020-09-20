@@ -70,3 +70,9 @@ You can read more about the waste collection modeling [on the collect page](./co
 
 You can read more about the waste treatment modeling [on the treatment page](./treatment.md)
 
+### Industrial territorial ecology, a new old form of waste management 
+* Old problem : from ages, humans and animals try to live in symbiosis (Nature, yes, before modern exploitation)
+* New problem : we forgot, we created massive news needs and waste. We are now running to find a new equilibrium
+* Modeling waste and modeling "industrial territorial ecology" can be done using this waste modeling project
+
+Discover tools to [the Industrial territorial ecology modeling] (./Industrial-territorial-ecology.md)
