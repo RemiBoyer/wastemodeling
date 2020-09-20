@@ -4,6 +4,7 @@
 Here, you will find a conceptual model of :
 * collect schema
 * collect process
+
 [Territory](./territory.md) and [Production](./production/md) are defined elsewhere.
 
 ### collect schema
