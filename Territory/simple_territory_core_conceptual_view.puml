@@ -1,0 +1,56 @@
+@startuml
+Title A simple territory \nCore model to limit data hungriness \nThis territory data model is useful for "building centric" modeling
+
+
+class Organization
+class Road<Line>
+class AdministrativeUnit<Polygon>
+
+class Building<Polygon> {
+main_usage :Usage
+number_of_person :Integer
+height :Integer
+
+
+}
+class AdministrativeUnit<Polygon> {
+name :string
+admin_type :AdministrativeUnitType
+number_of_person :Integer
+number_of_organization :Integer
+}
+
+class Organization {
+name :string
+organization_type :OrganisationType
+number_of_person :Integer
+}
+
+AdministrativeUnit "0..*" o-- "0..*" AdministrativeUnit
+AdministrativeUnit "0..1" o-- "0..*" Building
+Organization "0..*" -- "0..1" Building
+
+enum OrganisationType {
+Office
+Industry
+Shop
+Public
+...
+}
+
+enum AdministrativeUnitType {
+Census
+Administrative
+DataSource
+...
+}
+
+enum Usage {
+Housing
+Office
+Industry
+Shop
+...
+}
+
+@enduml
