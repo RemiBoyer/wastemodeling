@@ -1,0 +1,42 @@
+@startuml
+
+Title A simple territory \nMany model compatibility \n(Conceptual without attributes)
+hide members
+class Person
+class Household
+class Organization
+class Building<Polygon>
+class BuildingCell
+class BuildingGroup<Polygon>
+class Road<Line>
+class PublicSpace<Polygon>
+class AdministrativeUnit<Polygon>
+
+Building "1..1" *--  "0..*" BuildingCell
+BuildingGroup "0..1" o-- "0..*" Building
+
+AdministrativeUnit "0..1" o-- "0..*" Building
+AdministrativeUnit "0..1" o-- "0..*" BuildingGroup
+AdministrativeUnit "0..*" o-- "0..*" AdministrativeUnit
+
+Person "0..n" -- "0..1" Household
+Household "0..*" -- "0..1" Building
+Household "0..*" -- "0..1" BuildingCell
+Household "0..*" -- "0..1" BuildingGroup
+
+Organization "0..*" -- "0..1" Building
+Organization "0..*" -- "0..1" BuildingCell
+Organization "0..*" -- "0..1" BuildingGroup
+
+note "Synthetic population modeling required"  as N1
+N1 .right. Household
+N1 .right. Person
+
+note "To know BuildingCell we can rely on 2 methods :\n- architecture BIM data\n- synthetic creation without geometries knowing juste the number of flat"  as N2
+N2 -up- BuildingCell
+
+note "BuildingGroup is a flexible concept.\nThe need is coming from :\n- reality (gated condomium, multi-building)\n- modeling constraints (data distribution)"  as N3
+N3 -right- BuildingGroup
+
+
+@enduml
