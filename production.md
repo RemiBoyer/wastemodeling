@@ -20,3 +20,7 @@
 # From dataset, with an unsupervised approach
 * Accuracy in data creation is required
 
+## Production models
+### simplest per capita
+[Production per capita](./Production/simple_materials_from_collect_stats.md)
+
