@@ -53,8 +53,7 @@ WasteMaterial -- AdministrativeUnit
 
 note right
 Hypothesis : you can gather and mashup data to populate this AdministrativeUnit.
-'<math>d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h</math>
-<math> PersonWasteProduction.quantity = quantity_collected_by_year / number_of_person </math>
+<math> PersonWasteProduction.quantity = quantity collected by year / number of person </math>
 end note
 
 class ProductionModel<runnable> << (M,orchid) >> {
