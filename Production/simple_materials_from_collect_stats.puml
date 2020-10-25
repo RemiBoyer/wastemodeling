@@ -1,0 +1,64 @@
+@startuml
+Title A simple production model
+hide empty members
+class Organization
+class Person
+
+class WasteMaterial {
+short_label :string
+long_label :string
+volumic_mass : float
+}
+
+class PersonWasteProduction {
+quantity :float
+time_unit :Timeframe
+quantity_unit :QuantityUnit
+}
+note bottom
+You will use a per capita approach
+<math> PersonWasteProduction.quantity  </math>
+end note
+(Person, WasteMaterial) ..  PersonWasteProduction
+
+class OrganizationWasteProduction {
+quantity :float
+time_unit :Timeframe
+quantity_unit :QuantityUnit
+}
+(Organization, WasteMaterial) ..  OrganizationWasteProduction
+
+Enum TimeframeUnit {
+Hour
+Day
+Month
+Year
+}
+enum QuantityUnit {
+kg
+ton
+m3
+liter
+}
+
+Interface ProductionUnit {
+number_of_person
+}
+
+class AdministrativeUnit<Polygon> {
+quantity_collected_by_year :float
+number_of_person :Integer
+}
+WasteMaterial -- AdministrativeUnit
+
+note right
+Hypothesis : you can gather and mashup data to populate this AdministrativeUnit.
+'<math>d/dxf(x)=lim_(h->0)(f(x+h)-f(x))/h</math>
+<math> PersonWasteProduction.quantity = quantity_collected_by_year / number_of_person </math>
+end note
+
+class ProductionModel<runnable> << (M,orchid) >> {
+Produce(timeframe, production_unit)
+}
+
+@enduml
