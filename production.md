@@ -14,12 +14,12 @@
 * Magic constant or magic ratio
 
 ## Production models
-### simplest per capita
+### Simplest, production per capita
 [Production per capita](./Production/simple_materials_from_collect_stats.md)
 
 ## Estimation, datascience and hypothesis
-# From dataset, simple models from the previous chapter
+### From dataset, simple models from the previous chapter
 * Linear
 
-# From dataset, with an unsupervised approach
+### From dataset, with an unsupervised approach
 * Accuracy in data creation is required
