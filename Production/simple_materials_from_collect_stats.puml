@@ -17,7 +17,7 @@ quantity_unit :QuantityUnit
 }
 note bottom
 You will use a per capita approach
-<math> PersonWasteProduction.quantity  </math>
+<math> Person Waste Production quantity  </math>
 end note
 (Person, WasteMaterial) ..  PersonWasteProduction
 
@@ -53,7 +53,7 @@ WasteMaterial -- AdministrativeUnit
 
 note right
 Hypothesis : you can gather and mashup data to populate this AdministrativeUnit.
-<math> PersonWasteProduction.quantity = quantity collected by year / number of person </math>
+<math> Person Waste Production quantity = quantity collected by year / number of person </math>
 end note
 
 class ProductionModel<runnable> << (M,orchid) >> {
