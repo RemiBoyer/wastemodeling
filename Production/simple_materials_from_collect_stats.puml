@@ -1,5 +1,5 @@
 @startuml
-Title A simple production model
+Title A simple per capita production model \n(without solving the organization estimation complexity)
 hide empty members
 class Organization
 class Person
